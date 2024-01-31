@@ -1,77 +1,23 @@
-# Multiagent ChatBot using LLMs
-This repo uses [autogen](https://github.com/microsoft/autogen) for orchestrating user conversation across multiple agents. 
-This reduces implementation complexists as the inter agent communication is handled by autogen using prompts. 
+# Code migration using Azure OpenAI
 
-This repo creates a chatbot for a use case where a user can ask questions about a company or a data analysis question or about a product user guide. The chatbot internally orchestrates the conversation across multiple agents and returns the response to the user as shown below. 
+### Introduction
+This repository contains the code for the Azure OpenAI code migration project. The project aims to migrate code that might contain legacy componets to a new version based on provided API documentation using RAG techniques. The project is built using the Azure OpenAI API and the Azure Functions framework.
 
-The agents can answer questions across the following domains:
-- Company Info
-- Data Analysis and Visualization
-- Product User Guide
+### Python Setup
 
+1. Install Python 3.8 or later. You can download Python from the [official Python website](https://www.python.org/downloads/).
 
-## Company Info
-The multiagent chatbot can answers about company info based on 10K documents that are stored in a vector database. This uses the Retrieval Augmented Generation (RAG) model for retrieving the relevant documents and then uses the LLMs for generating the answer.
-
-![Company Info](./assets/companyinfo.png)
-
-## Data Analysis and Visualization
-The multiagent chatbot figures out the correct SQL Server tables to query and orchestrates with other agents for data analysis and visualization. The agents uses Plotly to generate graphs based on user questions and data retrieved from SQL Server database.
-
-![Data Analysis](./assets/da2.png)
-
-
-## Product User Guide
-The multiagent chatbot can answer questions about product user guide. This uses the Retrieval Augmented Generation (RAG) model for retrieving the relevant documents and then uses the LLMs for generating the answer. But this uses a different vector database than the one used for company info. The multiagent can disambiguate the user question and route it to the vector database.
-
-![product guide](./assets/productguide.png)
-
-## Getting Started
-If you like to try out the multiagent chatbot, you can follow the steps below.
-
-### Prerequisites
-- Node
-- Python 3.10
-- Bash
-- Docker
-- SQL Server database with Northwind database installed. You can follow the steps [here](https://docs.microsoft.com/en-us/sql/samples/northwind-install-configure?view=sql-server-ver15&tabs=ssms) to install the Northwind database.
-- Vector database with company info documents.
-
-
-### Installation
-- Clone this repo
-- Update autogen-copilot/search_helper.py to include your own vector database and documents. 
-- Update SQL Server connection string in autogen-copilot/sql_helper.py
-- Update the backendHost under chat-fluentui/src/config.json to point to http://localhost:5000.
-
-
-### Running the app
-- Run the following command to start the backend server
+2. Create Conda environment using the following command:
 ```bash
-cd autogen-copilot
+conda create -n code-migration python=3.10
+```
+3. Activate conda environment and install the required packages using the following command:
+```bash
 pip install -r requirements.txt
-python multiagent_api.py
 ```
-
-- Run the following command to start the frontend server
-```bash
-cd chat-fluentui
-npm install
-npm start
-```
-
-The app can also be run using docker-compose. 
-```bash
-docker-compose up
-```
-
-The app can be deployed to Azure Container Apps using ./deploy.sh script.
-Rename containerapp-config-rename.env to containerapp-config.env and update the values. Then run the following command to deploy the app to Azure Container Apps.
-```bash
-./deploy.sh
-```
-
-
-
+4. Rename secrets.env.rename to secrets.env and fill in the required values.
+4. Open vectordb_builder.ipynb notebook and attach the conda environment to the notebook.
+5. Once the vector database is built, run the code_gen_with_rag.ipynb notebook to generate the code.
+6. Review the generated code and make any necessary changes.
 
 

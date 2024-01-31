@@ -1,0 +1,11 @@
+langchain
+langserve[all]
+langchain-cli
+langchain-openai
+python-dotenv
+openai
+unstructured
+faiss-cpu
+chromadb
+langchainhub
+pypdf
