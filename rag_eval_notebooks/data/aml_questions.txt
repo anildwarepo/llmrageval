@@ -1,0 +1,45 @@
+How do you initiate a new Azure ML experiment using the Azure CLI?
+Describe the process of creating a new compute instance via the Azure ML CLI. What parameters are necessary?
+Explain how to submit a training job using Python and the AML SDK v2. Include an example of specifying a compute target.
+What is the command to list all the models registered in an Azure ML Workspace using the Azure CLI?
+Provide an example of how to use the AML SDK v2 to stream logs from a running experiment in Python.
+How can you configure an AutoML run for a classification task using the AML SDK v2, including specifying primary metric and training data?
+Describe the steps to retrieve the best model from an AutoML run using the AML SDK v2.
+What are the AutoML capabilities for handling imbalanced data in Azure ML?
+Explain how to use AutoML for forecasting time series data. What specific settings should be adjusted for time series problems?
+How do you create a custom deep learning environment with specific Python packages using the AML SDK v2?
+Describe the process of using Azure ML to train a deep learning model on a GPU compute cluster.
+Explain how to deploy a TensorFlow model as a web service in Azure ML. What are the key considerations for deployment?
+Provide an example of how to use the AML SDK v2 for distributed deep learning training. What configurations are necessary for multi-node training?
+How can Azure ML's HyperDrive be used to tune hyperparameters of a deep learning model? Give an example of specifying the search space.
+What is the command to update an existing model's properties, such as description or tags, using the Azure CLI?
+How does Azure ML integrate with Azure DevOps for implementing CI/CD pipelines for ML models? Describe the steps involved.
+Explain the process of setting up a real-time inferencing endpoint using a deep learning model in Azure ML. What are the performance tuning options available?
+How can you automate the process of model retraining and deployment using Azure ML Pipelines?
+Describe the approach to use Azure ML for implementing a recommendation system. What kind of data and algorithms are typically involved?
+How can you leverage Azure ML's built-in support for ONNX models for interoperability across different frameworks?
+What Azure storage services can be integrated with Azure Machine Learning for storing datasets?
+How do you authenticate Azure Machine Learning with Azure Blob Storage to access datasets?
+What steps are involved in uploading a dataset to Azure Blob Storage and then accessing it from an Azure Machine Learning experiment?
+Can Azure Machine Learning directly access data stored in Azure Data Lake Storage Gen2? If so, how?
+How does Azure Machine Learning support versioning of datasets stored in Azure Blob Storage?
+What is the recommended way to handle large datasets in Azure Machine Learning when the data resides in Azure Blob Storage?
+How do you use the Azure Machine Learning SDK to programmatically download data from Azure Blob Storage?
+What are the benefits of integrating Azure Data Lake Storage with Azure Machine Learning for big data scenarios?
+How can you secure data stored in Azure Storage services when accessed by Azure Machine Learning workspaces?
+What role do Azure Storage accounts play in deploying Azure Machine Learning models as web services?
+How do you monitor data access and usage when integrating Azure Machine Learning with Azure Storage?
+Can Azure Machine Learning use data stored in Azure File Storage? If so, what are the use cases?
+What are the best practices for managing input and output data for Azure Machine Learning pipelines using Azure Storage?
+How can you optimize data transfer between Azure Machine Learning and Azure Storage services for efficient model training?
+What considerations should be taken into account for data privacy and compliance when integrating Azure Machine Learning with Azure Storage?
+How can you use managed identities to securely access data in Azure Storage from Azure Machine Learning?
+What are the implications of storage redundancy options in Azure Storage on data availability for Azure Machine Learning experiments?
+How do you automate the backup and recovery of datasets used in Azure Machine Learning from Azure Storage?
+What tools and techniques are available for analyzing storage costs associated with Azure Machine Learning projects?
+How can data engineers streamline the data ingestion process from Azure Storage to Azure Machine Learning for real-time analytics?
+How can I using MSI with Storage?
+How can I browse data in the AML workspace?
+How to use run spark jobs and integrate with ADLS Gen2?
+How does batch inferencing work in parallel mode?
+How to deploy custom vision model to real time endpoint?
