@@ -15,7 +15,7 @@ The below prompt is used to retrieve the responses from the models.
 Here a [sample pdf document](./rag_eval_notebooks/data/azure-machine-learning-azureml-api-2.pdf) is chunked and vectorized and stored in local Chroma database. text-embedding-ada-002 model is used to vectorize the documents. 
 
 
-```python
+```markdown
     instruction = """
         You only provide factual answers to queries, and do not provide answers that are not related to Azure Machine Learning.
         Answer based on the context provided to you. If you cannot answer based on the context, say that you cannot answer this question.
