@@ -1,5 +1,0 @@
-2024-02-26 12:51:52 -0800   15288 execution.flow     INFO     Start executing nodes in thread pool mode.
-2024-02-26 12:51:52 -0800   15288 execution.flow     INFO     Start to run 1 nodes with concurrency level 16.
-2024-02-26 12:51:52 -0800   15288 execution.flow     INFO     Executing node chat. node run id: b72a5349-6bec-4bc6-9f51-5da21a8d1118_chat_0
-2024-02-26 12:51:53 -0800   15288 execution.flow     WARNING  Output of chat is not json serializable, use str to store it.
-2024-02-26 12:51:53 -0800   15288 execution.flow     INFO     Node chat completes.

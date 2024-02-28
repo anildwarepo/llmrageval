@@ -1,0 +1,1378 @@
+2024-02-27 11:33:41 -0800    8280 execution.bulk     INFO     Current system's available memory is 15487.9453125MB, memory consumption of current process is 177.828125MB, estimated available worker count is 15487.9453125/177.828125 = 87
+2024-02-27 11:33:41 -0800    8280 execution.bulk     INFO     Set process count to 4 by taking the minimum value among the factors of {'default_worker_count': 4, 'row_count': 45, 'estimated_worker_count_based_on_memory_usage': 87}.
+2024-02-27 11:33:43 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(1) start execution.
+2024-02-27 11:33:43 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(2) start execution.
+2024-02-27 11:33:43 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(3) start execution.
+2024-02-27 11:33:43 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(4) start execution.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(4) completed.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(5) start execution.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(1) completed.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(6) start execution.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(2) completed.
+2024-02-27 11:33:48 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(7) start execution.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(3) completed.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(8) start execution.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Finished 4 / 45 lines.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Average execution time for completed lines: 1.51 seconds. Estimated time for incomplete lines: 61.91 seconds.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(5) completed.
+2024-02-27 11:33:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(9) start execution.
+2024-02-27 11:34:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:34:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 5] [Processing: 4] [Pending: 36]
+2024-02-27 11:34:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 6 (Process name(SpawnProcess-3)-Process id(18548)-Line number(6)), line 7 (Process name(SpawnProcess-2)-Process id(25424)-Line number(7)), line 8 (Process name(SpawnProcess-5)-Process id(33160)-Line number(8)), line 9 (Process name(SpawnProcess-4)-Process id(34512)-Line number(9)).
+2024-02-27 11:34:48 -0800   18548 execution          WARNING  gpt_groundedness in line 6 has been running for 60 seconds, stacktrace of thread 2600:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 991, in _retry_request
+    time.sleep(timeout)
+
+2024-02-27 11:34:49 -0800   25424 execution          WARNING  gpt_groundedness in line 7 has been running for 60 seconds, stacktrace of thread 22068:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:34:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(7) completed.
+2024-02-27 11:34:49 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(10) start execution.
+2024-02-27 11:34:49 -0800   33160 execution          WARNING  gpt_groundedness in line 8 has been running for 60 seconds, stacktrace of thread 33868:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:34:49 -0800   34512 execution          WARNING  gpt_groundedness in line 9 has been running for 60 seconds, stacktrace of thread 16260:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(6) completed.
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(11) start execution.
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(9) completed.
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(12) start execution.
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(10) completed.
+2024-02-27 11:34:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(13) start execution.
+2024-02-27 11:34:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(8) completed.
+2024-02-27 11:34:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(14) start execution.
+2024-02-27 11:35:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:35:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 10] [Processing: 4] [Pending: 31]
+2024-02-27 11:35:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 11 (Process name(SpawnProcess-3)-Process id(18548)-Line number(11)), line 12 (Process name(SpawnProcess-4)-Process id(34512)-Line number(12)), line 13 (Process name(SpawnProcess-2)-Process id(25424)-Line number(13)), line 14 (Process name(SpawnProcess-5)-Process id(33160)-Line number(14)).
+2024-02-27 11:35:50 -0800   18548 execution          WARNING  gpt_groundedness in line 11 has been running for 60 seconds, stacktrace of thread 13916:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(12) completed.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(15) start execution.
+2024-02-27 11:35:50 -0800   25424 execution          WARNING  gpt_groundedness in line 13 has been running for 60 seconds, stacktrace of thread 6996:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(14) completed.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(11) completed.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(16) start execution.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(17) start execution.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(13) completed.
+2024-02-27 11:35:50 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(18) start execution.
+2024-02-27 11:36:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:36:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 14] [Processing: 4] [Pending: 27]
+2024-02-27 11:36:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 15 (Process name(SpawnProcess-4)-Process id(34512)-Line number(15)), line 16 (Process name(SpawnProcess-5)-Process id(33160)-Line number(16)), line 17 (Process name(SpawnProcess-3)-Process id(18548)-Line number(17)), line 18 (Process name(SpawnProcess-2)-Process id(25424)-Line number(18)).
+2024-02-27 11:36:50 -0800   34512 execution          WARNING  gpt_groundedness in line 15 has been running for 60 seconds, stacktrace of thread 29604:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 991, in _retry_request
+    time.sleep(timeout)
+
+2024-02-27 11:36:50 -0800   33160 execution          WARNING  gpt_groundedness in line 16 has been running for 60 seconds, stacktrace of thread 7508:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:36:50 -0800   18548 execution          WARNING  gpt_groundedness in line 17 has been running for 60 seconds, stacktrace of thread 14820:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:36:50 -0800   25424 execution          WARNING  gpt_groundedness in line 18 has been running for 60 seconds, stacktrace of thread 28156:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:36:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(18) completed.
+2024-02-27 11:36:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(19) start execution.
+2024-02-27 11:36:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(15) completed.
+2024-02-27 11:36:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(20) start execution.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Finished 16 / 45 lines.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Average execution time for completed lines: 11.79 seconds. Estimated time for incomplete lines: 341.91 seconds.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(19) completed.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(21) start execution.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(17) completed.
+2024-02-27 11:36:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(22) start execution.
+2024-02-27 11:36:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(16) completed.
+2024-02-27 11:36:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(23) start execution.
+2024-02-27 11:37:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:37:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 19] [Processing: 4] [Pending: 22]
+2024-02-27 11:37:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 20 (Process name(SpawnProcess-4)-Process id(34512)-Line number(20)), line 21 (Process name(SpawnProcess-2)-Process id(25424)-Line number(21)), line 22 (Process name(SpawnProcess-3)-Process id(18548)-Line number(22)), line 23 (Process name(SpawnProcess-5)-Process id(33160)-Line number(23)).
+2024-02-27 11:37:51 -0800   34512 execution          WARNING  gpt_groundedness in line 20 has been running for 60 seconds, stacktrace of thread 31016:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(22) completed.
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(24) start execution.
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(23) completed.
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(25) start execution.
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(20) completed.
+2024-02-27 11:37:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(26) start execution.
+2024-02-27 11:37:52 -0800   25424 execution          WARNING  gpt_groundedness in line 21 has been running for 60 seconds, stacktrace of thread 32440:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:37:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(21) completed.
+2024-02-27 11:37:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(27) start execution.
+2024-02-27 11:38:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:38:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 23] [Processing: 4] [Pending: 18]
+2024-02-27 11:38:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 24 (Process name(SpawnProcess-3)-Process id(18548)-Line number(24)), line 25 (Process name(SpawnProcess-5)-Process id(33160)-Line number(25)), line 26 (Process name(SpawnProcess-4)-Process id(34512)-Line number(26)), line 27 (Process name(SpawnProcess-2)-Process id(25424)-Line number(27)).
+2024-02-27 11:38:51 -0800   18548 execution          WARNING  gpt_groundedness in line 24 has been running for 60 seconds, stacktrace of thread 28832:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 991, in _retry_request
+    time.sleep(timeout)
+
+2024-02-27 11:38:51 -0800   33160 execution          WARNING  gpt_groundedness in line 25 has been running for 60 seconds, stacktrace of thread 32888:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:38:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(25) completed.
+2024-02-27 11:38:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(28) start execution.
+2024-02-27 11:38:52 -0800   34512 execution          WARNING  gpt_groundedness in line 26 has been running for 60 seconds, stacktrace of thread 29124:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Finished 24 / 45 lines.
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Average execution time for completed lines: 12.86 seconds. Estimated time for incomplete lines: 270.06 seconds.
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(26) completed.
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(29) start execution.
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(27) completed.
+2024-02-27 11:38:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(30) start execution.
+2024-02-27 11:38:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(24) completed.
+2024-02-27 11:38:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(31) start execution.
+2024-02-27 11:39:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:39:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 27] [Processing: 4] [Pending: 14]
+2024-02-27 11:39:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 28 (Process name(SpawnProcess-5)-Process id(33160)-Line number(28)), line 29 (Process name(SpawnProcess-4)-Process id(34512)-Line number(29)), line 30 (Process name(SpawnProcess-2)-Process id(25424)-Line number(30)), line 31 (Process name(SpawnProcess-3)-Process id(18548)-Line number(31)).
+2024-02-27 11:39:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(28) completed.
+2024-02-27 11:39:51 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(32) start execution.
+2024-02-27 11:39:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(29) completed.
+2024-02-27 11:39:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(33) start execution.
+2024-02-27 11:39:52 -0800   25424 execution          WARNING  gpt_groundedness in line 30 has been running for 60 seconds, stacktrace of thread 30432:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 991, in _retry_request
+    time.sleep(timeout)
+
+2024-02-27 11:39:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(32) completed.
+2024-02-27 11:39:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(34) start execution.
+2024-02-27 11:39:53 -0800   18548 execution          WARNING  gpt_groundedness in line 31 has been running for 60 seconds, stacktrace of thread 21692:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:40:06 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(31) completed.
+2024-02-27 11:40:06 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(35) start execution.
+2024-02-27 11:40:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:40:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 31] [Processing: 4] [Pending: 10]
+2024-02-27 11:40:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 30 (Process name(SpawnProcess-2)-Process id(25424)-Line number(30)), line 33 (Process name(SpawnProcess-4)-Process id(34512)-Line number(33)), line 34 (Process name(SpawnProcess-5)-Process id(33160)-Line number(34)), line 35 (Process name(SpawnProcess-3)-Process id(18548)-Line number(35)).
+2024-02-27 11:40:52 -0800   34512 execution          WARNING  gpt_groundedness in line 33 has been running for 60 seconds, stacktrace of thread 29624:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:40:52 -0800   25424 execution          WARNING  gpt_groundedness in line 30 has been running for 120 seconds, stacktrace of thread 30432:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:40:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(33) completed.
+2024-02-27 11:40:52 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(36) start execution.
+2024-02-27 11:40:53 -0800   33160 execution          WARNING  gpt_groundedness in line 34 has been running for 60 seconds, stacktrace of thread 30892:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(30) completed.
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(37) start execution.
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(34) completed.
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(38) start execution.
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(35) completed.
+2024-02-27 11:40:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(39) start execution.
+2024-02-27 11:41:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:41:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 35] [Processing: 4] [Pending: 6]
+2024-02-27 11:41:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 36 (Process name(SpawnProcess-4)-Process id(34512)-Line number(36)), line 37 (Process name(SpawnProcess-2)-Process id(25424)-Line number(37)), line 38 (Process name(SpawnProcess-5)-Process id(33160)-Line number(38)), line 39 (Process name(SpawnProcess-3)-Process id(18548)-Line number(39)).
+2024-02-27 11:41:52 -0800   34512 execution          WARNING  gpt_groundedness in line 36 has been running for 60 seconds, stacktrace of thread 9600:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:41:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(36) completed.
+2024-02-27 11:41:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(40) start execution.
+2024-02-27 11:41:53 -0800   25424 execution          WARNING  gpt_groundedness in line 37 has been running for 60 seconds, stacktrace of thread 34564:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:41:53 -0800   33160 execution          WARNING  gpt_groundedness in line 38 has been running for 60 seconds, stacktrace of thread 32956:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:41:53 -0800   18548 execution          WARNING  gpt_groundedness in line 39 has been running for 60 seconds, stacktrace of thread 34336:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:41:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(38) completed.
+2024-02-27 11:41:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(41) start execution.
+2024-02-27 11:41:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(37) completed.
+2024-02-27 11:41:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(42) start execution.
+2024-02-27 11:41:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(39) completed.
+2024-02-27 11:41:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(43) start execution.
+2024-02-27 11:42:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:42:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 39] [Processing: 4] [Pending: 2]
+2024-02-27 11:42:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 40 (Process name(SpawnProcess-4)-Process id(34512)-Line number(40)), line 41 (Process name(SpawnProcess-5)-Process id(33160)-Line number(41)), line 42 (Process name(SpawnProcess-2)-Process id(25424)-Line number(42)), line 43 (Process name(SpawnProcess-3)-Process id(18548)-Line number(43)).
+2024-02-27 11:42:53 -0800   34512 execution          WARNING  gpt_groundedness in line 40 has been running for 60 seconds, stacktrace of thread 32424:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:42:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(42) completed.
+2024-02-27 11:42:53 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(44) start execution.
+2024-02-27 11:42:53 -0800   33160 execution          WARNING  gpt_groundedness in line 41 has been running for 60 seconds, stacktrace of thread 12620:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:42:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(41) completed.
+2024-02-27 11:42:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(45) start execution.
+2024-02-27 11:42:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-4)-Process id(34512)-Line number(40) completed.
+2024-02-27 11:42:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-3)-Process id(18548)-Line number(43) completed.
+2024-02-27 11:43:43 -0800    8280 execution.bulk     INFO     [Process Pool] [Active processes: 4 / 4]
+2024-02-27 11:43:43 -0800    8280 execution.bulk     INFO     [Lines] [Finished: 43] [Processing: 2] [Pending: 0]
+2024-02-27 11:43:43 -0800    8280 execution.bulk     INFO     Processing Lines: line 44 (Process name(SpawnProcess-2)-Process id(25424)-Line number(44)), line 45 (Process name(SpawnProcess-5)-Process id(33160)-Line number(45)).
+2024-02-27 11:43:53 -0800   25424 execution          WARNING  gpt_groundedness in line 44 has been running for 60 seconds, stacktrace of thread 34104:
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\common.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\tools\aoai.py", line 153, in chat
+    completion = self._client.chat.completions.create(**params)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\openai_injector.py", line 88, in wrapper
+    return f(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\promptflow\_core\tracer.py", line 404, in wrapped
+    output = func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\resources\chat\completions.py", line 659, in create
+    return self._post(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 1180, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 869, in request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 945, in _request
+    return self._retry_request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 993, in _retry_request
+    return self._request(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\openai\_base_client.py", line 898, in _request
+    response = self._client.send(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 915, in send
+    response = self._send_handling_auth(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 943, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 980, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_client.py", line 1016, in _send_single_request
+    response = transport.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpx\_transports\default.py", line 231, in handle_request
+    resp = self._pool.handle_request(req)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection_pool.py", line 251, in handle_request
+    response = connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 111, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 176, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_sync\http11.py", line 212, in _receive_event
+    data = self._network_stream.read(
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "c:\Users\anildwa\AppData\Local\miniconda3\envs\code-migration\lib\ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+
+2024-02-27 11:43:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-5)-Process id(33160)-Line number(45) completed.
+2024-02-27 11:43:54 -0800    8280 execution.bulk     INFO     Process name(SpawnProcess-2)-Process id(25424)-Line number(44) completed.
+2024-02-27 11:43:55 -0800    8280 execution.bulk     INFO     Finished 45 / 45 lines.
+2024-02-27 11:43:55 -0800    8280 execution.bulk     INFO     Average execution time for completed lines: 13.59 seconds. Estimated time for incomplete lines: 0.0 seconds.
+2024-02-27 11:43:56 -0800    8280 execution.bulk     INFO     Executing aggregation nodes...
+2024-02-27 11:43:56 -0800    8280 execution.bulk     INFO     Finish executing aggregation nodes.

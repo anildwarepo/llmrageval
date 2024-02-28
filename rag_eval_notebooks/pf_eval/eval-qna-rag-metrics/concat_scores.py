@@ -14,11 +14,11 @@ def concat_results(rag_retrieval_score: dict = None,
     for item in load_list:
         if item['result']:
             try:
-                score = float(item['result']["quality_score"])
+                score = float(item['result']["gpt_groundedness"])
             except Exception as e:
                 score = np.nan
                 errors.append({"name": item["name"], "msg":  str(e), "data": item['result']})
-            reasoning = item['result']['quality_reasoning']
+            reasoning = None #item['result']['quality_reasoning']
         else:
             score = np.nan
             reasoning = None

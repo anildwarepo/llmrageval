@@ -1,16 +1,29 @@
 from promptflow import tool
+import numpy as np
 import re
 
 
 @tool
-def parse_grounding_output(rag_grounding_score: str) -> str:
-    try:
-        numbers_found = re.findall(r"Quality score:\s*(\d+)\/\d", rag_grounding_score)
-        score = float(numbers_found[0]) if len(numbers_found) > 0 else 0
-    except Exception:
-        score = float("nan")
-    try:
-        quality_reasoning, _ = rag_grounding_score.split("Quality score: ")
-    except Exception:
-        quality_reasoning = rag_grounding_score
-    return {"quality_score": score, "quality_reasoning": quality_reasoning}
+def concat_results(rag_grounding_score: str):
+
+    load_list = [{'name': 'gpt_groundedness', 'score': rag_grounding_score}]
+    score_list = []
+    errors = []
+    for item in load_list:
+        try:
+            score = item["score"]
+            match = re.search(r'\d', score)
+            if match:
+                score = match.group()
+            score = float(score)
+        except Exception as e:
+            score = np.nan
+            errors.append({"name": item["name"], "msg":   str(e), "data": item["score"]})
+        score_list.append({"name": item["name"], "score": score})
+
+    variant_level_result = {}
+    for item in score_list:
+        item_name = str(item["name"])
+        variant_level_result[item_name] = item["score"]
+        variant_level_result[item_name + '_pass_rate'] = 1 if item["score"] > 3 else 0
+    return variant_level_result

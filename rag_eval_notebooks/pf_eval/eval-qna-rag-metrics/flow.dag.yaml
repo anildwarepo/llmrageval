@@ -428,7 +428,7 @@ nodes:
     presence_penalty: 0
     frequency_penalty: 0
     logit_bias: ""
-    FullBody: ${inputs.documents}
+    context: ${inputs.documents}
     answer: ${inputs.answer}
     question: ${inputs.question}
   provider: AzureOpenAI
