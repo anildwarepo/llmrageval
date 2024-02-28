@@ -12,7 +12,7 @@ In this project, we will demonstrate how different OpenAI models perform that us
 ## Prompt Engineering
 
 The below prompt is used to retrieve the responses from the models.
-Here a sample pdf document is chunked and vectorized and stored in local Chroma database. text-embedding-ada-002 model is used to vectorize the documents. 
+Here a [sample pdf document](./rag_eval_notebooks/data/azure-machine-learning-azureml-api-2.pdf) is chunked and vectorized and stored in local Chroma database. text-embedding-ada-002 model is used to vectorize the documents. 
 
 
 ```python
