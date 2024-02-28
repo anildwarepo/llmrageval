@@ -100,7 +100,7 @@ This can be used for retrieval with Finetuned models as well. Since the examples
 
 For this dataset, GPT-4-Turbo (1106) model has the highest groundedness score of 5. This means that the model is able to provide the most grounded responses to the queries. The GPT-35-Turbo (1106) model has a groundedness score of 4.8 and the GPT-35-Turbo (1106) Fine Tuned model has a groundedness score of 4.5 and GPT-35-Turbo (1106) Fine Tuned model with no context has a groundedness score of 2.9.
 
-This shows that the fine tuned models when augmented with the context are able to provide more grounded responses to the queries that are closed to GPT-4 responses from a groundedness perspective.
+This shows that the fine tuned models when augmented with the RAG context are able to provide grounded responses to the queries that are as good as GPT-4 responses from a groundedness perspective.
 
 
 * Note: The Groundedness scores could vary based on the context, the queries and the dataset used for evaluation. 
