@@ -1,0 +1,22 @@
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType, DecimalType
+promotion_schema = StructType([
+    StructField("p_promo_sk", IntegerType(), True),
+    StructField("p_promo_id", StringType(), True),
+    StructField("p_start_date_sk", IntegerType(), True),
+    StructField("p_end_date_sk", IntegerType(), True),
+    StructField("p_item_sk", IntegerType(), True),
+    StructField("p_cost", DecimalType(15, 2), True),
+    StructField("p_response_target", IntegerType(), True),
+    StructField("p_promo_name", StringType(), True),
+    StructField("p_channel_dmail", StringType(), True),
+    StructField("p_channel_email", StringType(), True),
+    StructField("p_channel_catalog", StringType(), True),
+    StructField("p_channel_tv", StringType(), True),
+    StructField("p_channel_radio", StringType(), True),
+    StructField("p_channel_press", StringType(), True),
+    StructField("p_channel_event", StringType(), True),
+    StructField("p_channel_demo", StringType(), True),
+    StructField("p_channel_details", StringType(), True),
+    StructField("p_purpose", StringType(), True),
+    StructField("p_discount_active", StringType(), True),
+])

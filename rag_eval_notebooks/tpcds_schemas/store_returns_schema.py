@@ -1,0 +1,23 @@
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType, DecimalType
+store_returns_schema = StructType([
+    StructField("sr_returned_date_sk", IntegerType(), True),
+    StructField("sr_return_time_sk", IntegerType(), True),
+    StructField("sr_item_sk", IntegerType(), True),
+    StructField("sr_customer_sk", IntegerType(), True),
+    StructField("sr_cdemo_sk", IntegerType(), True),
+    StructField("sr_hdemo_sk", IntegerType(), True),
+    StructField("sr_addr_sk", IntegerType(), True),
+    StructField("sr_store_sk", IntegerType(), True),
+    StructField("sr_reason_sk", IntegerType(), True),
+    StructField("sr_ticket_number", IntegerType(), True),
+    StructField("sr_return_quantity", IntegerType(), True),
+    StructField("sr_return_amt", DecimalType(7, 2), True),
+    StructField("sr_return_tax", DecimalType(7, 2), True),
+    StructField("sr_return_amt_inc_tax", DecimalType(7, 2), True),
+    StructField("sr_fee", DecimalType(7, 2), True),
+    StructField("sr_return_ship_cost", DecimalType(7, 2), True),
+    StructField("sr_refunded_cash", DecimalType(7, 2), True),
+    StructField("sr_reversed_charge", DecimalType(7, 2), True),
+    StructField("sr_store_credit", DecimalType(7, 2), True),
+    StructField("sr_net_loss", DecimalType(7, 2), True),
+])

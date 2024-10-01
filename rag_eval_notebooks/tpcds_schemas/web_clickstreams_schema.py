@@ -1,0 +1,20 @@
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DateType, DecimalType
+web_clickstreams_schema = StructType([
+    StructField("wcs_click_stream_sk", IntegerType(), True),
+    StructField("wcs_click_stream_id", StringType(), True),
+    StructField("wcs_user_sk", IntegerType(), True),
+    StructField("wcs_item_sk", IntegerType(), True),
+    StructField("wcs_sales_sk", IntegerType(), True),
+    StructField("wcs_web_page_sk", IntegerType(), True),
+    StructField("wcs_date_sk", IntegerType(), True),
+    StructField("wcs_time_sk", IntegerType(), True),
+    StructField("wcs_click_date_sk", IntegerType(), True),
+    StructField("wcs_click_time_sk", IntegerType(), True),
+    StructField("wcs_sales_price", DecimalType(7, 2), True),
+    StructField("wcs_ship_cost", DecimalType(7, 2), True),
+    StructField("wcs_net_paid", DecimalType(7, 2), True),
+    StructField("wcs_net_paid_inc_tax", DecimalType(7, 2), True),
+    StructField("wcs_net_paid_inc_ship", DecimalType(7, 2), True),
+    StructField("wcs_net_paid_inc_ship_tax", DecimalType(7, 2), True),
+    StructField("wcs_net_profit", DecimalType(7, 2), True),
+])
